@@ -36,11 +36,18 @@
 }
 
 -(NSString *)name {
-    return [self.entityData getSingle:@"name"];
+    id name = [self.entityData getSingle:@"name"];
+    if ([name isKindOfClass:[NSNull class]] || ![name isKindOfClass:[NSString class]]) {
+        return nil;
+    }
+    return (NSString *)name;
 }
 
 -(NSString *)imageUrl {
     id image = [self.entityData getSingle:@"image"];
+    if ([image isKindOfClass:[NSNull class]]) {
+        return nil;
+    }
     if ([image isKindOfClass:[NSString class]]) {
         return image;
     }
@@ -81,12 +88,24 @@
 }
 
 -(NSString *)descriptionText {
-    return [self.entityData getSingle:@"description"];
+    id description = [self.entityData getSingle:@"description"];
+    if ([description isKindOfClass:[NSNull class]] || ![description isKindOfClass:[NSString class]]) {
+        return nil;
+    }
+    return (NSString *)description;
 }
 
 -(NSString *)callToActionText {
-    NSString *actionType = [[self.entityData getSingle:@"potentialAction"] getSingle:@"@type"];
-    return [actionType substringToIndex:([actionType length] - [@"Action" length])];
+    id potentialAction = [self.entityData getSingle:@"potentialAction"];
+    if (potentialAction == nil || ![potentialAction isKindOfClass:[NSDictionary class]]) {
+        return nil;
+    }
+    id actionType = [potentialAction getSingle:@"@type"];
+    if (potentialAction == nil || ![potentialAction isKindOfClass:[NSDictionary class]]) {
+        return nil;
+    }
+    NSString *actionTypeString = (NSString *)actionType;
+    return [actionTypeString substringToIndex:([actionTypeString length] - [@"Action" length])];
 }
 
 -(NSString *)urxResolutionUrl {

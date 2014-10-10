@@ -22,7 +22,7 @@
 @implementation URXQueryIntegrationTests
 
 -(void)testSearch {
-    setURXAPIKey(@"API KEY GOES HERE");
+    setURXAPIKey(@"URX API Key goes here");
     URXSearchResponse *response = [[[URXTerm alloc] initWithKeywords:@"test"] searchSynchronously];
     if (response.error != nil) {
         XCTFail(@"Integration test couldn't resolve search request for query \"test\". Error: %@", response.error.errorMessage);
