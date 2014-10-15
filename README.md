@@ -20,7 +20,7 @@ First, clone this repository. Then, drag and drop the URXSearch directory into t
 
 
 **Step 2: Linking to URXSearch Binaries and Headers**
-Make sure that both the ``URXSearch.framework`` has been added to your project's binary. In your project settings, select your ``Target`` and select the ``Build Phases`` tab.  In the ``Link Binary With Libraries`` phase you should see ``URXSearch.framework``. If not, hit the + button and select it from the list of options.
+Make sure that the ``URXSearch.framework`` has been added to your project's binary. In your project settings, select your ``Target`` and select the ``Build Phases`` tab.  In the ``Link Binary With Libraries`` phase you should see ``URXSearch.framework``. If not, hit the + button and select it from the list of options.
 
 
 **Step 3: Setup the API Key**
