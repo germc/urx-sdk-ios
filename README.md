@@ -23,8 +23,11 @@ First, clone this repository. Then, drag and drop the URXSearch directory into t
 Make sure that the ``URXSearch.framework`` has been added to your project's binary. In your project settings, select your ``Target`` and select the ``Build Phases`` tab.  In the ``Link Binary With Libraries`` phase you should see ``URXSearch.framework``. If not, hit the + button and select it from the list of options.
 
 
-**Step 3: Setup the API Key**
+**Step 3: Set up the API Key**
 Before you can use the SDK, you must declare your ``APIKey`` in the Info.plist file. Contact support@urx.com for an API key.
+
+**Step 4: Set -ObjC linker flag**
+In your project's Build Settings, make sure to add -ObjC in the "Other Linker Flags" setting.
 
 
 Usage
