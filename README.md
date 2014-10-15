@@ -15,18 +15,18 @@ This installation tutorial will show you how to add URXSearch to an existing pro
 
 Installation
 ------------
-**Step 1: Add the URXSearch Framework to your Project**
+**Step 1: Add the URXSearch Framework to your Project**:
 First, clone this repository. Then, drag and drop the URXSearch directory into the "Frameworks" directory of your project.
 
 
-**Step 2: Linking to URXSearch Binaries and Headers**
+**Step 2: Linking to URXSearch Binaries and Headers**:
 Make sure that the ``URXSearch.framework`` has been added to your project's binary. In your project settings, select your ``Target`` and select the ``Build Phases`` tab.  In the ``Link Binary With Libraries`` phase you should see ``URXSearch.framework``. If not, hit the + button and select it from the list of options.
 
 
-**Step 3: Set up the API Key**
+**Step 3: Set up the API Key**:
 Before you can use the SDK, you must declare your ``APIKey`` in the Info.plist file. Contact support@urx.com for an API key.
 
-**Step 4: Set -ObjC linker flag**
+**Step 4: Set -ObjC linker flag**:
 In your project's Build Settings, make sure to add -ObjC in the "Other Linker Flags" setting.
 
 
