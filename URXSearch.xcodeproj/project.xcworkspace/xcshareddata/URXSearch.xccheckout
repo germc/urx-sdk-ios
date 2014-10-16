@@ -10,14 +10,14 @@
 	<string>URXSearch</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C15BA396D3AB78509EAB215337CDC8E99BEC0F46</key>
+		<key>4E81244DCF47D9B0A5EF8B83B072F85AAD45B586</key>
 		<string>ssh://github.com/URXtech/urx-sdk-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>URXSearch.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C15BA396D3AB78509EAB215337CDC8E99BEC0F46</key>
+		<key>4E81244DCF47D9B0A5EF8B83B072F85AAD45B586</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C15BA396D3AB78509EAB215337CDC8E99BEC0F46</string>
+	<string>4E81244DCF47D9B0A5EF8B83B072F85AAD45B586</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C15BA396D3AB78509EAB215337CDC8E99BEC0F46</string>
+			<string>4E81244DCF47D9B0A5EF8B83B072F85AAD45B586</string>
 			<key>IDESourceControlWCCName</key>
 			<string>urx-sdk-ios</string>
 		</dict>

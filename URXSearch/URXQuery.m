@@ -12,6 +12,9 @@
 #import "URXSearchResult.h"
 #import "URXAnd.h"
 #import "URXOr.h"
+#import "URXLimit.h"
+#import "URXOffset.h"
+#import "URXRawQuery.h"
 
 @interface URXQuery()
 
@@ -30,6 +33,11 @@
 - (URXNot *) not {
     return [URXNot notQuery:self];
 }
+
+- (URXQuery *) paginateWithLimit:(int)limit andOffset:(int)offset {
+    return [URXRawQuery queryFromString:[NSString stringWithFormat:@"%@ %@ %@", [self queryString], [[URXLimit limitWithValue:limit] queryString], [[URXOffset offsetWithValue:offset] queryString]]];
+}
+
 - (NSString *) queryString {
     return @"";
 }

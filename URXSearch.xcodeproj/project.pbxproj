@@ -33,6 +33,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		78A40F1419EF2D3F00121171 /* URXLimit.h in Headers */ = {isa = PBXBuildFile; fileRef = 78A40F1219EF2D3F00121171 /* URXLimit.h */; };
+		78A40F1519EF2D3F00121171 /* URXLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A40F1319EF2D3F00121171 /* URXLimit.m */; };
+		78A40F1819EF2E5100121171 /* URXOffset.h in Headers */ = {isa = PBXBuildFile; fileRef = 78A40F1619EF2E5100121171 /* URXOffset.h */; };
+		78A40F1919EF2E5100121171 /* URXOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A40F1719EF2E5100121171 /* URXOffset.m */; };
+		78A40F1B19EF2EFC00121171 /* URXLimitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A40F1A19EF2EFC00121171 /* URXLimitTests.m */; };
+		78A40F1D19EF307100121171 /* URXOffsetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A40F1C19EF307100121171 /* URXOffsetTests.m */; };
+		78F85EDC19F036B3002459AC /* URXQueryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F85EDB19F036B3002459AC /* URXQueryTests.m */; };
 		AC24BA7A19E1F75B0090EFE8 /* URXAPIError.m in Sources */ = {isa = PBXBuildFile; fileRef = AC24BA7919E1F75B0090EFE8 /* URXAPIError.m */; };
 		AC24BA7D19E356EB0090EFE8 /* URXAPIKey.h in Headers */ = {isa = PBXBuildFile; fileRef = AC24BA7B19E356EB0090EFE8 /* URXAPIKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC24BA7E19E356EB0090EFE8 /* URXAPIKey.m in Sources */ = {isa = PBXBuildFile; fileRef = AC24BA7C19E356EB0090EFE8 /* URXAPIKey.m */; };
@@ -125,6 +132,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		78A40F1219EF2D3F00121171 /* URXLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXLimit.h; sourceTree = "<group>"; };
+		78A40F1319EF2D3F00121171 /* URXLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXLimit.m; sourceTree = "<group>"; };
+		78A40F1619EF2E5100121171 /* URXOffset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXOffset.h; sourceTree = "<group>"; };
+		78A40F1719EF2E5100121171 /* URXOffset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXOffset.m; sourceTree = "<group>"; };
+		78A40F1A19EF2EFC00121171 /* URXLimitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXLimitTests.m; sourceTree = "<group>"; };
+		78A40F1C19EF307100121171 /* URXOffsetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXOffsetTests.m; sourceTree = "<group>"; };
+		78F85EDB19F036B3002459AC /* URXQueryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXQueryTests.m; sourceTree = "<group>"; };
 		AC24BA7919E1F75B0090EFE8 /* URXAPIError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXAPIError.m; sourceTree = "<group>"; };
 		AC24BA7B19E356EB0090EFE8 /* URXAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXAPIKey.h; sourceTree = "<group>"; };
 		AC24BA7C19E356EB0090EFE8 /* URXAPIKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXAPIKey.m; sourceTree = "<group>"; };
@@ -326,6 +340,10 @@
 				ACC0386719BFAFE2005DA33B /* URXRawQuery.m */,
 				ACC0386819BFAFE2005DA33B /* URXFilter.h */,
 				ACC0386919BFAFE2005DA33B /* URXFilter.m */,
+				78A40F1219EF2D3F00121171 /* URXLimit.h */,
+				78A40F1319EF2D3F00121171 /* URXLimit.m */,
+				78A40F1619EF2E5100121171 /* URXOffset.h */,
+				78A40F1719EF2E5100121171 /* URXOffset.m */,
 			);
 			name = Query;
 			sourceTree = "<group>";
@@ -342,6 +360,9 @@
 				ACC038A119BFB018005DA33B /* URXAndTests.m */,
 				ACC038A219BFB018005DA33B /* URXOrTests.m */,
 				ACC038A319BFB018005DA33B /* URXActionFilterTests.m */,
+				78A40F1A19EF2EFC00121171 /* URXLimitTests.m */,
+				78A40F1C19EF307100121171 /* URXOffsetTests.m */,
+				78F85EDB19F036B3002459AC /* URXQueryTests.m */,
 			);
 			name = "Query Tests";
 			sourceTree = "<group>";
@@ -362,8 +383,10 @@
 				ACC0386E19BFAFE2005DA33B /* URXAnd.h in Headers */,
 				ACC0388019BFAFE2005DA33B /* URXActionFilter.h in Headers */,
 				ACC0388A19BFAFE2005DA33B /* URXRawQuery.h in Headers */,
+				78A40F1819EF2E5100121171 /* URXOffset.h in Headers */,
 				ACC0387419BFAFE2005DA33B /* URXTerm.h in Headers */,
 				ACC0387819BFAFE2005DA33B /* URXPhrase.h in Headers */,
+				78A40F1419EF2D3F00121171 /* URXLimit.h in Headers */,
 				ACC0386C19BFAFE2005DA33B /* URXQuery.h in Headers */,
 				ACC0388219BFAFE2005DA33B /* URXNot.h in Headers */,
 				AC30A3B719E5D11A00D2FB0F /* URXSearchResponse.h in Headers */,
@@ -502,6 +525,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Copy the framework to the user's desktop\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${PROJECT_FILE_PATH}/../${RW_FRAMEWORK_NAME}.framework\"";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -512,6 +536,7 @@
 			files = (
 				AC24BA7A19E1F75B0090EFE8 /* URXAPIError.m in Sources */,
 				ACC038FF19BFB986005DA33B /* URXSearchResult.m in Sources */,
+				78A40F1919EF2E5100121171 /* URXOffset.m in Sources */,
 				ACC0386F19BFAFE2005DA33B /* URXAnd.m in Sources */,
 				ACC0387D19BFAFE2005DA33B /* URXDomainFilter.m in Sources */,
 				ACEDDC9D19E5C322007DA6C1 /* URXConcatenation.m in Sources */,
@@ -522,6 +547,7 @@
 				ACC0388319BFAFE2005DA33B /* URXNot.m in Sources */,
 				ACC0386D19BFAFE2005DA33B /* URXQuery.m in Sources */,
 				ACC0387119BFAFE2005DA33B /* URXOr.m in Sources */,
+				78A40F1519EF2D3F00121171 /* URXLimit.m in Sources */,
 				AC24BA7E19E356EB0090EFE8 /* URXAPIKey.m in Sources */,
 				ACC0388519BFAFE2005DA33B /* URXGroup.m in Sources */,
 				ACC0388B19BFAFE2005DA33B /* URXRawQuery.m in Sources */,
@@ -537,6 +563,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78A40F1B19EF2EFC00121171 /* URXLimitTests.m in Sources */,
+				78F85EDC19F036B3002459AC /* URXQueryTests.m in Sources */,
 				ACC038B819BFB20C005DA33B /* NSDictionary+JSONLDTests.m in Sources */,
 				ACC038A619BFB018005DA33B /* URXPhraseTests.m in Sources */,
 				ACC038AA19BFB018005DA33B /* URXNotTests.m in Sources */,
@@ -546,6 +574,7 @@
 				ACC038A819BFB018005DA33B /* URXDomainFilterTests.m in Sources */,
 				ACC038AE19BFB018005DA33B /* URXOrTests.m in Sources */,
 				ACC038AD19BFB018005DA33B /* URXAndTests.m in Sources */,
+				78A40F1D19EF307100121171 /* URXOffsetTests.m in Sources */,
 				ACC038AB19BFB018005DA33B /* URXGroupTests.m in Sources */,
 				ACC038A719BFB018005DA33B /* URXRawQueryTests.m in Sources */,
 				ACC038A519BFB018005DA33B /* URXTermTests.m in Sources */,
