@@ -8,6 +8,8 @@
 
 #import "URXConcatenation.h"
 
+/** Concatenates two queries with AND. Using the and: method of URXQuery is preferred over using this class directly.
+ */
 @interface URXAnd : URXConcatenation
 
 -(instancetype) initWithLeftQuery:(URXQuery *)leftQuery andRightQuery:(URXQuery *)rightQuery;

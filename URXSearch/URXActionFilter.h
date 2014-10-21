@@ -8,6 +8,21 @@
 
 #import "URXFilter.h"
 
+/** Creates a action filter query with the specified Schema.org action type.
+ 
+     Example Code:
+         // Create a phrase query for a song title
+         URXPhrase *phrase = [URXPhrase phraseWithString:@"ode to joy"];
+         // We'll also limit this search to ListenAction to provide our users with some music
+         URXActionFilter *listen = [URXActionFilter listenAction];
+         // Join the two queries with an AND, and search
+         [[phrase and: listen] searchAsynchronouslyWithSuccessHandler:^(URXSearchResponse *response) {
+             // Handle response
+         } andFailureHandler:^(URXAPIError *error) {
+             // Handle error
+         }];
+ 
+ */
 @interface URXActionFilter : URXFilter
 
 -(instancetype) initWithAction:(NSString *)action;

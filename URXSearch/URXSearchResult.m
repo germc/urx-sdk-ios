@@ -10,7 +10,6 @@
 #import "NSDictionary+JSONLD.h"
 #import "URXAPIRequestHelper.h"
 #import "URXResolutionResponse.h"
-#import "URXDeeplinkResolutionHelper.h"
 #import "URXAPIError.h"
 
 @interface URXSearchResult()

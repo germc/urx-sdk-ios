@@ -8,6 +8,8 @@
 
 #import "URXQuery.h"
 
+/** Negates a queries with NOT. Using the not method of URXQuery is preferred over using this class directly.
+ */
 @interface URXNot : URXQuery
 
 -(instancetype) initWithQuery:(URXQuery *)query;

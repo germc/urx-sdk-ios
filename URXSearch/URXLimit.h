@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "URXFilter.h"
 
+/** This class is used to set the search result page size. You should use the URXQuery method `paginateWithLimit: limit andOffset: offset` instead.
+ */
 @interface URXLimit : URXFilter
 
 -(instancetype) initWithValue:(int) limitValue;

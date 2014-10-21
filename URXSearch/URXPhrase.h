@@ -8,6 +8,19 @@
 
 #import "URXQuery.h"
 
+/** Creates a quoted phrase query from the phrase provided.
+ 
+     Example Code:
+         // Create a query from keywords
+         URXPhrase *phrase = [URXPhrase phraseWithString:@"pumpkin patch"];
+         // Search with the phrase query
+         [phrase searchAsynchronouslyWithSuccessHandler:^(URXSearchResponse *response) {
+             // Handle response
+         } andFailureHandler:^(URXAPIError *error) {
+             // Handle error
+         }];
+ 
+ */
 @interface URXPhrase : URXQuery
 
 - (instancetype) initWithPhrase:(NSString *)phrase;
