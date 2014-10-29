@@ -1,10 +1,4 @@
-//
-//  URXActionFilter.m
-//  URXSearch
-//
-//  Created by James Turner on 9/3/14.
 //  Copyright (c) 2014 URX. All rights reserved.
-//
 
 #import "URXActionFilter.h"
 

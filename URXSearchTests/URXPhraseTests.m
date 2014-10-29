@@ -1,10 +1,4 @@
-//
-//  URXPhraseTests.m
-//  URXSearch
-//
-//  Created by Chris Sell on 9/4/14.
 //  Copyright (c) 2014 URX. All rights reserved.
-//
 
 #import <XCTest/XCTest.h>
 #import "URXPhrase.h"
