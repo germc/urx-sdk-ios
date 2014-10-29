@@ -1,10 +1,4 @@
-//
-//  URXQueryTests.m
-//  URXSearch
-//
-//  Created by James Turner on 10/16/14.
 //  Copyright (c) 2014 URX. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>

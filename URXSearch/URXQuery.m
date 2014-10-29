@@ -1,10 +1,5 @@
-//
-//  URXQuery.m
-//  URXSearch
-//
-//  Created by James Turner on 9/3/14.
 //  Copyright (c) 2014 URX. All rights reserved.
-//
+
 #import <UIKit/UIKit.h>
 #import "URXQuery.h"
 #import "URXAPIError.h"
