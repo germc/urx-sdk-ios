@@ -15,22 +15,24 @@
 
 @interface URXSearchResult()
 
--(instancetype) initWithEntityData:(NSDictionary *)entityData;
+-(instancetype) initWithEntityData:(NSDictionary *)entityData andCorrelationId:(NSString *)correlationId;
 
 @end
 
 @implementation URXSearchResult
 
 @synthesize entityData = _entityData;
+@synthesize correlationId = _correlationId;
 
-+(instancetype) searchResultFromEntityData:(NSDictionary *)entityData
++(instancetype) searchResultFromEntityData:(NSDictionary *)entityData andCorrelationId:(NSString *)correlationId
 {
-    return [[self alloc] initWithEntityData:entityData];
+    return [[self alloc] initWithEntityData:entityData andCorrelationId:correlationId];
 }
 
--(instancetype) initWithEntityData:(NSDictionary *)entityData {
+-(instancetype) initWithEntityData:(NSDictionary *)entityData andCorrelationId:(NSString *)correlationId {
     if (self = [super init]) {
         _entityData = entityData;
+        _correlationId = correlationId;
     }
     return self;
 }
@@ -113,7 +115,7 @@
 }
 
 -(void) resolveAsynchronouslyWithSuccessHandler:(void (^)(URXResolutionResponse *))successHandler andFailureHandler:(void (^)(URXAPIError *))failureHandler{
-    NSMutableURLRequest *request = [URXAPIRequestHelper requestWithURL:self.urxResolutionUrl];
+    NSMutableURLRequest *request = [URXAPIRequestHelper resolutionRequestFromSearchResult:self];
     
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[NSOperationQueue currentQueue]
@@ -212,7 +214,7 @@
 }
 
 -(URXResolutionResponse *) resolveSynchronously {
-    NSMutableURLRequest *request = [URXAPIRequestHelper requestWithURL:self.urxResolutionUrl];
+    NSMutableURLRequest *request = [URXAPIRequestHelper resolutionRequestFromSearchResult:self];
     
     NSHTTPURLResponse *response;
     NSError *e;

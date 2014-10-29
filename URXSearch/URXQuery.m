@@ -49,9 +49,9 @@
     return [self queryString];
 }
 
-- (void) searchAsynchronouslyWithSuccessHandler:(void (^)(URXSearchResponse *))successHandler andFailureHandler:(void (^)(URXAPIError *))failureHandler {
+- (void) searchAsynchronouslyWithPlacementTags:(NSArray *)placementTags successHandler:(void (^)(URXSearchResponse *))successHandler andFailureHandler:(void (^)(URXAPIError *))failureHandler {
     
-    NSURLRequest *request = [URXAPIRequestHelper requestWithURL:[URXAPIRequestHelper searchURLWithQueryString:[self queryString]]];
+    NSURLRequest *request = [URXAPIRequestHelper searchRequestFromQuery:self AndPlacementTags:placementTags];
 
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[NSOperationQueue currentQueue]
@@ -63,8 +63,8 @@
      }];
 }
 
-- (URXSearchResponse *) searchSynchronously {
-    NSURLRequest *request = [URXAPIRequestHelper requestWithURL:[URXAPIRequestHelper searchURLWithQueryString:[self queryString]]];
+- (URXSearchResponse *) searchSynchronouslyWithPlacementTags:(NSArray *)placementTags {
+    NSURLRequest *request = [URXAPIRequestHelper searchRequestFromQuery:self AndPlacementTags:placementTags];
     NSHTTPURLResponse *r;
     NSError *e;
     NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&r error:&e];
@@ -151,7 +151,10 @@
         failureHandler(makeError(URXJSONParsingError));
         return;
     }
-    successHandler([[URXSearchResponse alloc] initWithEntityData:responseJSON]);
+    
+    // This may be nil if no correlation id was returned
+    NSString *correlationId = [[response allHeaderFields] objectForKey:@"X-Correlation-Id"];
+    successHandler([[URXSearchResponse alloc] initWithEntityData:responseJSON andCorrelationId:correlationId]);
 }
 
 @end

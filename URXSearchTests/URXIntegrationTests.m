@@ -23,7 +23,7 @@
 
 -(void)testSearch {
     setURXAPIKey(@"URX API Key goes here");
-    URXSearchResponse *response = [[[URXTerm alloc] initWithKeywords:@"test"] searchSynchronously];
+    URXSearchResponse *response = [[[URXTerm alloc] initWithKeywords:@"test"] searchSynchronouslyWithPlacementTags:nil];
     if (response.error != nil) {
         XCTFail(@"Integration test couldn't resolve search request for query \"test\". Error: %@", response.error.errorMessage);
         return;
@@ -32,6 +32,7 @@
     
     URXResolutionResponse *resolutionResponse = [result resolveSynchronously];
     XCTAssert(resolutionResponse.error == nil, @"Integration test couldn't resolve resolution request for %@", result.urxResolutionUrl);
+    setURXAPIKey(nil);
 }
 
 @end

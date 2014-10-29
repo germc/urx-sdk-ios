@@ -15,7 +15,7 @@
 @property (strong, nonatomic, readonly) NSArray *results;
 @property (strong, nonatomic, readonly) URXAPIError *error;
 
--(instancetype) initWithEntityData:(NSDictionary *)entityData;
+-(instancetype) initWithEntityData:(NSDictionary *)entityData andCorrelationId:(NSString *)correlationId;
 -(instancetype) initWithError:(URXAPIError *)error;
 
 @end

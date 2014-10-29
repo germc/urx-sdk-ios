@@ -39,6 +39,7 @@
 		78A40F1919EF2E5100121171 /* URXOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A40F1719EF2E5100121171 /* URXOffset.m */; };
 		78A40F1B19EF2EFC00121171 /* URXLimitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A40F1A19EF2EFC00121171 /* URXLimitTests.m */; };
 		78A40F1D19EF307100121171 /* URXOffsetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A40F1C19EF307100121171 /* URXOffsetTests.m */; };
+		78E8DB071A00165400CBBFE5 /* URXAPIRequestHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E8DB061A00165400CBBFE5 /* URXAPIRequestHelperTests.m */; };
 		78F85EDC19F036B3002459AC /* URXQueryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F85EDB19F036B3002459AC /* URXQueryTests.m */; };
 		AC24BA7A19E1F75B0090EFE8 /* URXAPIError.m in Sources */ = {isa = PBXBuildFile; fileRef = AC24BA7919E1F75B0090EFE8 /* URXAPIError.m */; };
 		AC24BA7D19E356EB0090EFE8 /* URXAPIKey.h in Headers */ = {isa = PBXBuildFile; fileRef = AC24BA7B19E356EB0090EFE8 /* URXAPIKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -96,8 +97,6 @@
 		ACC0390319BFBCFC005DA33B /* URXResolutionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC0390119BFBCFC005DA33B /* URXResolutionResponse.m */; };
 		ACC0390619BFBF9D005DA33B /* URXAPIRequestHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ACC0390419BFBF9D005DA33B /* URXAPIRequestHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACC0390719BFBF9D005DA33B /* URXAPIRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC0390519BFBF9D005DA33B /* URXAPIRequestHelper.m */; };
-		ACC0390A19BFCA81005DA33B /* URXDeeplinkResolutionHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = ACC0390819BFCA81005DA33B /* URXDeeplinkResolutionHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ACC0390B19BFCA81005DA33B /* URXDeeplinkResolutionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC0390919BFCA81005DA33B /* URXDeeplinkResolutionHelper.m */; };
 		ACEDDC9C19E5C322007DA6C1 /* URXConcatenation.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEDDC9A19E5C322007DA6C1 /* URXConcatenation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACEDDC9D19E5C322007DA6C1 /* URXConcatenation.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEDDC9B19E5C322007DA6C1 /* URXConcatenation.m */; };
 /* End PBXBuildFile section */
@@ -138,6 +137,7 @@
 		78A40F1719EF2E5100121171 /* URXOffset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXOffset.m; sourceTree = "<group>"; };
 		78A40F1A19EF2EFC00121171 /* URXLimitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXLimitTests.m; sourceTree = "<group>"; };
 		78A40F1C19EF307100121171 /* URXOffsetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXOffsetTests.m; sourceTree = "<group>"; };
+		78E8DB061A00165400CBBFE5 /* URXAPIRequestHelperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXAPIRequestHelperTests.m; sourceTree = "<group>"; };
 		78F85EDB19F036B3002459AC /* URXQueryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXQueryTests.m; sourceTree = "<group>"; };
 		AC24BA7919E1F75B0090EFE8 /* URXAPIError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXAPIError.m; sourceTree = "<group>"; };
 		AC24BA7B19E356EB0090EFE8 /* URXAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXAPIKey.h; sourceTree = "<group>"; };
@@ -197,8 +197,6 @@
 		ACC0390119BFBCFC005DA33B /* URXResolutionResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXResolutionResponse.m; sourceTree = "<group>"; };
 		ACC0390419BFBF9D005DA33B /* URXAPIRequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXAPIRequestHelper.h; sourceTree = "<group>"; };
 		ACC0390519BFBF9D005DA33B /* URXAPIRequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXAPIRequestHelper.m; sourceTree = "<group>"; };
-		ACC0390819BFCA81005DA33B /* URXDeeplinkResolutionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXDeeplinkResolutionHelper.h; sourceTree = "<group>"; };
-		ACC0390919BFCA81005DA33B /* URXDeeplinkResolutionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXDeeplinkResolutionHelper.m; sourceTree = "<group>"; };
 		ACEDDC9A19E5C322007DA6C1 /* URXConcatenation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXConcatenation.h; sourceTree = "<group>"; };
 		ACEDDC9B19E5C322007DA6C1 /* URXConcatenation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXConcatenation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -274,8 +272,6 @@
 				ACC0390119BFBCFC005DA33B /* URXResolutionResponse.m */,
 				ACC0390419BFBF9D005DA33B /* URXAPIRequestHelper.h */,
 				ACC0390519BFBF9D005DA33B /* URXAPIRequestHelper.m */,
-				ACC0390819BFCA81005DA33B /* URXDeeplinkResolutionHelper.h */,
-				ACC0390919BFCA81005DA33B /* URXDeeplinkResolutionHelper.m */,
 				AC24BA7B19E356EB0090EFE8 /* URXAPIKey.h */,
 				AC24BA7C19E356EB0090EFE8 /* URXAPIKey.m */,
 				AC30A3B519E5D11A00D2FB0F /* URXSearchResponse.h */,
@@ -300,6 +296,7 @@
 				ACC038B719BFB20C005DA33B /* NSDictionary+JSONLDTests.m */,
 				ACC038FA19BFB3ED005DA33B /* URXIntegrationTests.m */,
 				AC2F2AA219DB63E00070A268 /* URXSearchResultTests.m */,
+				78E8DB061A00165400CBBFE5 /* URXAPIRequestHelperTests.m */,
 			);
 			path = URXSearchTests;
 			sourceTree = "<group>";
@@ -392,7 +389,6 @@
 				AC30A3B719E5D11A00D2FB0F /* URXSearchResponse.h in Headers */,
 				AC24BA7D19E356EB0090EFE8 /* URXAPIKey.h in Headers */,
 				ACEDDC9C19E5C322007DA6C1 /* URXConcatenation.h in Headers */,
-				ACC0390A19BFCA81005DA33B /* URXDeeplinkResolutionHelper.h in Headers */,
 				ACC038FE19BFB986005DA33B /* URXSearchResult.h in Headers */,
 				ACC0387C19BFAFE2005DA33B /* URXDomainFilter.h in Headers */,
 				ACC038B519BFB113005DA33B /* NSDictionary+JSONLD.h in Headers */,
@@ -542,7 +538,6 @@
 				ACEDDC9D19E5C322007DA6C1 /* URXConcatenation.m in Sources */,
 				ACC0388D19BFAFE2005DA33B /* URXFilter.m in Sources */,
 				AC30A3B819E5D11A00D2FB0F /* URXSearchResponse.m in Sources */,
-				ACC0390B19BFCA81005DA33B /* URXDeeplinkResolutionHelper.m in Sources */,
 				ACC0390319BFBCFC005DA33B /* URXResolutionResponse.m in Sources */,
 				ACC0388319BFAFE2005DA33B /* URXNot.m in Sources */,
 				ACC0386D19BFAFE2005DA33B /* URXQuery.m in Sources */,
@@ -573,6 +568,7 @@
 				ACC038AF19BFB018005DA33B /* URXActionFilterTests.m in Sources */,
 				ACC038A819BFB018005DA33B /* URXDomainFilterTests.m in Sources */,
 				ACC038AE19BFB018005DA33B /* URXOrTests.m in Sources */,
+				78E8DB071A00165400CBBFE5 /* URXAPIRequestHelperTests.m in Sources */,
 				ACC038AD19BFB018005DA33B /* URXAndTests.m in Sources */,
 				78A40F1D19EF307100121171 /* URXOffsetTests.m in Sources */,
 				ACC038AB19BFB018005DA33B /* URXGroupTests.m in Sources */,
