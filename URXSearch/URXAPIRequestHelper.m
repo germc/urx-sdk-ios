@@ -95,9 +95,7 @@
     if(result.correlationId != nil) {
         [request addValue:result.correlationId forHTTPHeaderField:@"X-Correlation-Id"];
     }
-    if (result.resultPosition != nil) {
-        [request addValue:[result.resultPosition description] forHTTPHeaderField:@"X-Result-Position"];
-    }
+    [request addValue:[result.resultPosition description] forHTTPHeaderField:@"X-Result-Position"];
     return request;
 }
 
