@@ -22,4 +22,11 @@
     XCTAssert([@"magic limit:5 offset:4" isEqualToString:output], @"Pagination helper method didn't give expected output");
 }
 
+-(void) testTag {
+    NSString *category = @"registrationType";
+    NSString *value = @"platinum";
+    URXQuery *query = [[URXTerm termWithKeywords:@"some keyword"] withTagCategory:category AndValue:value];
+    XCTAssert([@[@"registrationType:platinum"] isEqualToArray:query.tags]);
+}
+
 @end

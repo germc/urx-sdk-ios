@@ -16,7 +16,7 @@
 @interface URXAPIRequestHelper : NSObject
 
 +(NSMutableURLRequest *) requestWithURL:(NSString *)url;
-+(NSMutableURLRequest *) searchRequestFromQuery:(URXQuery *)query AndPlacementTags:(NSArray *)tags;
++(NSMutableURLRequest *) searchRequestFromQuery:(URXQuery *)query;
 +(NSMutableURLRequest *) resolutionRequestFromSearchResult:(URXSearchResult *)result;
 +(NSString *) uriEncode:(NSString *)toEncode;
 

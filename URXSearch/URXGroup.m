@@ -23,6 +23,17 @@
     return self;
 }
 
+- (NSArray *)tags {
+    __block NSArray *toReturn = @[];
+    [self.queries enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if ([obj isKindOfClass:[URXQuery class]]) {
+            URXQuery *query = obj;
+            toReturn = [toReturn arrayByAddingObjectsFromArray:query.tags];
+        }
+    }];
+    return toReturn;
+}
+
 - (NSString *)queryString {
     if (self.queries == nil) {
         return @"";

@@ -15,6 +15,7 @@
 #import "URXLimit.h"
 #import "URXOffset.h"
 #import "URXRawQuery.h"
+#import "URXTag.h"
 
 @interface URXQuery()
 
@@ -35,7 +36,12 @@
 }
 
 - (URXQuery *) paginateWithLimit:(int)limit andOffset:(int)offset {
-    return [URXRawQuery queryFromString:[NSString stringWithFormat:@"%@ %@ %@", [self queryString], [[URXLimit limitWithValue:limit] queryString], [[URXOffset offsetWithValue:offset] queryString]]];
+    return [[URXConcatenation alloc] initWithConcatenationString:@" " leftQuery:self andRightQuery:[[URXConcatenation alloc] initWithConcatenationString:@" " leftQuery:[URXLimit limitWithValue:limit] andRightQuery:[URXOffset offsetWithValue:offset]]];
+}
+
+- (URXQuery *)withTagCategory:(NSString *)category AndValue:(NSString *)value {
+    NSString *tag = [NSString stringWithFormat:@"%@:%@", category, value];
+    return [[URXTag alloc] initWithQuery:self AndTags:@[tag]];
 }
 
 - (NSString *) queryString {
@@ -49,9 +55,13 @@
     return [self queryString];
 }
 
-- (void) searchAsynchronouslyWithPlacementTags:(NSArray *)placementTags successHandler:(void (^)(URXSearchResponse *))successHandler andFailureHandler:(void (^)(URXAPIError *))failureHandler {
+- (NSArray *)tags {
+    return @[];
+}
+
+- (void) searchAsynchronouslyWithSuccessHandler:(void (^)(URXSearchResponse *))successHandler andFailureHandler:(void (^)(URXAPIError *))failureHandler {
     
-    NSURLRequest *request = [URXAPIRequestHelper searchRequestFromQuery:self AndPlacementTags:placementTags];
+    NSURLRequest *request = [URXAPIRequestHelper searchRequestFromQuery:self];
 
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[NSOperationQueue currentQueue]
@@ -63,8 +73,8 @@
      }];
 }
 
-- (URXSearchResponse *) searchSynchronouslyWithPlacementTags:(NSArray *)placementTags {
-    NSURLRequest *request = [URXAPIRequestHelper searchRequestFromQuery:self AndPlacementTags:placementTags];
+- (URXSearchResponse *) searchSynchronously {
+    NSURLRequest *request = [URXAPIRequestHelper searchRequestFromQuery:self];
     NSHTTPURLResponse *r;
     NSError *e;
     NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&r error:&e];

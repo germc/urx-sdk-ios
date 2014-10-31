@@ -32,6 +32,10 @@
     return self;
 }
 
+-(NSArray *)tags {
+    return [self.leftQuery.tags arrayByAddingObjectsFromArray:self.rightQuery.tags];
+}
+
 -(NSString *)queryString
 {
     BOOL leftEmpty = self.leftQuery == nil || [[self.leftQuery queryString] isEqualToString:@""];

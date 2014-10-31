@@ -30,8 +30,8 @@
     BOOL (*isAdvertisingTrackingEnabledFunction)(id, SEL) = (void *)isAdvertisingTrackingEnabledImp;
     BOOL isAdvertisingTrackingEnabled = isAdvertisingTrackingEnabledFunction(sharedManagerResult, isAdvertisingTrackingEnabledSel);
     
-    // If advertising tracking is not enabled, then return IFV
-    if(isAdvertisingTrackingEnabled == NO) return [[UIDevice currentDevice].identifierForVendor UUIDString];
+    // If advertising tracking is not enabled, then return nil
+    if(isAdvertisingTrackingEnabled == NO) return nil;
     
     // Grab the IDFA dynamically
     SEL advertisingIdentifierSel = NSSelectorFromString(@"advertisingIdentifier");
@@ -71,17 +71,19 @@
     if(idfa != nil) {
         [request addValue:idfa forHTTPHeaderField:@"X-Device-Identifier"];
     }
+    [request addValue:[[UIDevice currentDevice].identifierForVendor UUIDString] forHTTPHeaderField:@"X-Device-Identifier"];
     
     return request;
 }
 
-+(NSMutableURLRequest *) searchRequestFromQuery:(URXQuery *)query AndPlacementTags:(NSArray *)tags {
++(NSMutableURLRequest *) searchRequestFromQuery:(URXQuery *)query {
+    NSArray *tags = query.tags;
     NSString *searchUrl = [NSString stringWithFormat:@"%@%@", URX_API_BASE_URL, [self uriEncode:[query queryString]]];
     NSMutableURLRequest *request = [self requestWithURL:searchUrl];
     if(tags != nil) {
         [tags enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             if([obj isKindOfClass:[NSString class]]) {
-                [request addValue:obj forHTTPHeaderField:@"X-Placement-Tag"];
+                [request addValue:obj forHTTPHeaderField:@"X-Tag"];
             }
         }];
     }

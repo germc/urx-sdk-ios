@@ -11,6 +11,7 @@
 #import "URXAPIRequestHelper.h"
 #import "URXAPIKey.h"
 #import "URXRawQuery.h"
+#import "URXTag.h"
 
 @interface URXAPIRequestHelperTests : XCTestCase
 
@@ -27,27 +28,27 @@
     setURXAPIKey(nil);
 }
 
-- (void)testSearchRequestWithPlacementTags {
+- (void)testSearchRequestWithTags {
     setURXAPIKey(@"API KEY");
     
     // Only strings should make it into the header
-    NSArray *whatWeAreGoingToPassAsPlacementTags = @[@"front page", @16, @{}, [[NSURL alloc] init], @"center"];
+    NSArray *whatWeAreGoingToPassAsTags = @[@"front page", @[], @"center", @{}];
     NSArray *whatShouldActuallyGoIntoTheHeader = @[@"front page", @"center"];
     
-    NSMutableURLRequest *request = [URXAPIRequestHelper searchRequestFromQuery:[URXRawQuery queryFromString:@"Joe Montana"] AndPlacementTags:whatWeAreGoingToPassAsPlacementTags];
+    NSMutableURLRequest *request = [URXAPIRequestHelper searchRequestFromQuery:[[URXTag alloc] initWithQuery:[URXRawQuery queryFromString:@"Joe Montana"] AndTags:whatWeAreGoingToPassAsTags]];
     
-    NSArray *placementTagsFromHeader = [[[request allHTTPHeaderFields] valueForKey:@"X-Placement-Tag"] componentsSeparatedByString:@","];
-    XCTAssert([placementTagsFromHeader isEqualToArray:whatShouldActuallyGoIntoTheHeader], @"Search requests taking placement tags should only include the strings passed into the placement tags field.");
+    NSArray *tagsFromHeader = [[[request allHTTPHeaderFields] valueForKey:@"X-Tag"] componentsSeparatedByString:@","];
+    XCTAssert([tagsFromHeader isEqualToArray:whatShouldActuallyGoIntoTheHeader], @"Search requests taking tags should only include the strings passed into the tags field.");
     
     setURXAPIKey(nil);
 }
 
-- (void)testSearchRequestWithoutPlacementTags {
+- (void)testSearchRequestWithoutTags {
     setURXAPIKey(@"API KEY");
     
-    NSMutableURLRequest *request = [URXAPIRequestHelper searchRequestFromQuery:[URXRawQuery queryFromString:@"Joe Montana"] AndPlacementTags:nil];
+    NSMutableURLRequest *request = [URXAPIRequestHelper searchRequestFromQuery:[[URXTag alloc] initWithQuery:[URXRawQuery queryFromString:@"Joe Montana"] AndTags:nil]];
     
-    XCTAssert([[request allHTTPHeaderFields] valueForKey:@"X-Placement-Tag"] == nil, @"If nil placement tags are passed, the header should not be written.");
+    XCTAssert([[request allHTTPHeaderFields] valueForKey:@"X-Tag"] == nil, @"If nil tags are passed, the header should not be written.");
     
     setURXAPIKey(nil);
 }

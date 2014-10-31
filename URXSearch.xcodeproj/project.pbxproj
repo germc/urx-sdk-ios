@@ -33,6 +33,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		7898E9021A04022B00819BEA /* URXTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 7898E9001A04022B00819BEA /* URXTag.h */; };
+		7898E9031A04022B00819BEA /* URXTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 7898E9011A04022B00819BEA /* URXTag.m */; };
 		78A40F1419EF2D3F00121171 /* URXLimit.h in Headers */ = {isa = PBXBuildFile; fileRef = 78A40F1219EF2D3F00121171 /* URXLimit.h */; };
 		78A40F1519EF2D3F00121171 /* URXLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A40F1319EF2D3F00121171 /* URXLimit.m */; };
 		78A40F1819EF2E5100121171 /* URXOffset.h in Headers */ = {isa = PBXBuildFile; fileRef = 78A40F1619EF2E5100121171 /* URXOffset.h */; };
@@ -131,6 +133,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7898E9001A04022B00819BEA /* URXTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXTag.h; sourceTree = "<group>"; };
+		7898E9011A04022B00819BEA /* URXTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXTag.m; sourceTree = "<group>"; };
 		78A40F1219EF2D3F00121171 /* URXLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXLimit.h; sourceTree = "<group>"; };
 		78A40F1319EF2D3F00121171 /* URXLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXLimit.m; sourceTree = "<group>"; };
 		78A40F1619EF2E5100121171 /* URXOffset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXOffset.h; sourceTree = "<group>"; };
@@ -341,6 +345,8 @@
 				78A40F1319EF2D3F00121171 /* URXLimit.m */,
 				78A40F1619EF2E5100121171 /* URXOffset.h */,
 				78A40F1719EF2E5100121171 /* URXOffset.m */,
+				7898E9001A04022B00819BEA /* URXTag.h */,
+				7898E9011A04022B00819BEA /* URXTag.m */,
 			);
 			name = Query;
 			sourceTree = "<group>";
@@ -372,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC0390219BFBCFC005DA33B /* URXResolutionResponse.h in Headers */,
+				7898E9021A04022B00819BEA /* URXTag.h in Headers */,
 				ACC0389619BFAFF4005DA33B /* URXAPIError.h in Headers */,
 				ACC0388419BFAFE2005DA33B /* URXGroup.h in Headers */,
 				ACC0387019BFAFE2005DA33B /* URXOr.h in Headers */,
@@ -540,6 +547,7 @@
 				AC30A3B819E5D11A00D2FB0F /* URXSearchResponse.m in Sources */,
 				ACC0390319BFBCFC005DA33B /* URXResolutionResponse.m in Sources */,
 				ACC0388319BFAFE2005DA33B /* URXNot.m in Sources */,
+				7898E9031A04022B00819BEA /* URXTag.m in Sources */,
 				ACC0386D19BFAFE2005DA33B /* URXQuery.m in Sources */,
 				ACC0387119BFAFE2005DA33B /* URXOr.m in Sources */,
 				78A40F1519EF2D3F00121171 /* URXLimit.m in Sources */,
