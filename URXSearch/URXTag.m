@@ -33,8 +33,6 @@
 }
 
 - (NSArray *)tags {
-    NSLog(@"%@", _tags);
-    NSLog(@"%@", self.query.tags);
     return [_tags arrayByAddingObjectsFromArray:self.query.tags];
 }
 

@@ -59,7 +59,6 @@
     URXSearchResult *r = [URXSearchResult searchResultFromEntityData:@{@"potentialAction":@{@"target":@{@"urlTemplate":@"a b"}}} resultPosition:[NSNumber numberWithInt:4] andCorrelationId:@"hello"];
     
     NSMutableURLRequest *request = [URXAPIRequestHelper resolutionRequestFromSearchResult:r];
-    NSLog(@"%@ : %@", [[request allHTTPHeaderFields] description], request.URL.absoluteString);
     
     NSString *url = request.URL.absoluteString;
     NSString *expectedURL = [NSString stringWithFormat:@"%@a%%20b", URX_API_BASE_URL];
