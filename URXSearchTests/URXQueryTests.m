@@ -19,6 +19,7 @@
 
 -(void) testPagination {
     NSString *output = [[[URXTerm termWithKeywords:@"magic"] paginateWithLimit:5 andOffset:4] queryString];
+    NSLog(@"%@", output);
     XCTAssert([@"magic limit:5 offset:4" isEqualToString:output], @"Pagination helper method didn't give expected output");
 }
 

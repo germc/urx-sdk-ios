@@ -21,7 +21,7 @@
         NSArray *resultsJSON = [entityData objectForKey:@"result"];
         NSMutableArray *results = [NSMutableArray array];
         [resultsJSON enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-            [results addObject:[URXSearchResult searchResultFromEntityData:obj andCorrelationId:correlationId]];
+            [results addObject:[URXSearchResult searchResultFromEntityData:obj resultPosition:[NSNumber numberWithUnsignedInteger:idx] andCorrelationId:correlationId]];
         }];
         _results = [results copy];
     }

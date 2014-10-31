@@ -11,7 +11,7 @@
 @implementation URXOr
 
 -(instancetype) initWithLeftQuery:(URXQuery *)leftQuery andRightQuery:(URXQuery *)rightQuery {
-    return [super initWithConcatenationString:@"OR" leftQuery:leftQuery andRightQuery:rightQuery];
+    return [super initWithConcatenationString:@" OR " leftQuery:leftQuery andRightQuery:rightQuery];
 }
 
 @end

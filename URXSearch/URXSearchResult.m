@@ -15,7 +15,7 @@
 
 @interface URXSearchResult()
 
--(instancetype) initWithEntityData:(NSDictionary *)entityData andCorrelationId:(NSString *)correlationId;
+-(instancetype) initWithEntityData:(NSDictionary *)entityData resultPosition:(NSNumber *)resultPosition andCorrelationId:(NSString *)correlationId;
 
 @end
 
@@ -23,15 +23,17 @@
 
 @synthesize entityData = _entityData;
 @synthesize correlationId = _correlationId;
+@synthesize resultPosition = _resultPosition;
 
-+(instancetype) searchResultFromEntityData:(NSDictionary *)entityData andCorrelationId:(NSString *)correlationId
++(instancetype) searchResultFromEntityData:(NSDictionary *)entityData resultPosition:(NSNumber *)resultPosition andCorrelationId:(NSString *)correlationId
 {
-    return [[self alloc] initWithEntityData:entityData andCorrelationId:correlationId];
+    return [[self alloc] initWithEntityData:entityData resultPosition:resultPosition andCorrelationId:correlationId];
 }
 
--(instancetype) initWithEntityData:(NSDictionary *)entityData andCorrelationId:(NSString *)correlationId {
+-(instancetype) initWithEntityData:(NSDictionary *)entityData resultPosition:(NSNumber *)resultPosition andCorrelationId:(NSString *)correlationId {
     if (self = [super init]) {
         _entityData = entityData;
+        _resultPosition = resultPosition;
         _correlationId = correlationId;
     }
     return self;

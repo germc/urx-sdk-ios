@@ -50,7 +50,7 @@
     if (rightEmpty) {
         return [self.leftQuery queryString];
     }
-    return [NSString stringWithFormat:@"%@ %@ %@", self.leftQuery, self.concatenationString, self.rightQuery];
+    return [NSString stringWithFormat:@"%@%@%@", self.leftQuery, self.concatenationString, self.rightQuery];
 }
 
 @end

@@ -56,7 +56,7 @@
 - (void)testResolutionRequest {
     setURXAPIKey(@"API KEY");
     
-    URXSearchResult *r = [URXSearchResult searchResultFromEntityData:@{@"potentialAction":@{@"target":@{@"urlTemplate":@"a b"}}} andCorrelationId:@"hello"];
+    URXSearchResult *r = [URXSearchResult searchResultFromEntityData:@{@"potentialAction":@{@"target":@{@"urlTemplate":@"a b"}}} resultPosition:[NSNumber numberWithInt:4] andCorrelationId:@"hello"];
     
     NSMutableURLRequest *request = [URXAPIRequestHelper resolutionRequestFromSearchResult:r];
     NSLog(@"%@ : %@", [[request allHTTPHeaderFields] description], request.URL.absoluteString);
@@ -66,6 +66,8 @@
     XCTAssertTrue([url isEqualToString:expectedURL], @"The url grabbed from potentialAction.target.urlTemplate should be uri encoded.");
     
     XCTAssert([[[request allHTTPHeaderFields] valueForKey:@"X-Correlation-Id"] isEqualToString:@"hello"], @"The correlation id should be set on resolution requests.");
+    
+    XCTAssert([[[request allHTTPHeaderFields] valueForKey:@"X-Result-Position"] isEqualToString:@"4"], @"The result position should be set on resolution requests.");
     
     setURXAPIKey(nil);
 }

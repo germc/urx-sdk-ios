@@ -19,6 +19,8 @@
 @property (nonatomic,readonly) NSString *urxResolutionUrl;
 @property (strong,nonatomic,readonly) NSDictionary *entityData;
 
+@property (strong, nonatomic, readonly) NSNumber *resultPosition;
+
 /** Returns the id that correlates to the search request.
  
  @return The search request correlation id.
@@ -32,7 +34,7 @@
  @return The search result object wrapping the JSONLD entity data.
  
  */
-+(instancetype) searchResultFromEntityData:(NSDictionary *)entityData andCorrelationId:(NSString *)correlationId;
++(instancetype) searchResultFromEntityData:(NSDictionary *)entityData resultPosition:(NSNumber *)resultPosition andCorrelationId:(NSString *)correlationId;
 
 -(void) resolveAsynchronouslyWithSuccessHandler:(void (^)(URXResolutionResponse *))successHandler andFailureHandler:(void (^)(URXAPIError *))failureHandler;
 -(void) resolveAsynchronouslyWithWebFallbackAndFailureHandler:(void (^)(URXAPIError *))failureHandler;
