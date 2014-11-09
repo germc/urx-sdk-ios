@@ -16,7 +16,7 @@ This installation tutorial will show you how to add URXSearch to an existing pro
 Installation
 ------------
 **Step 1: Add the URXSearch Framework to your Project**:
-First, clone this repository. Then, drag and drop the URXSearch directory into the "Frameworks" directory of your project.
+First, clone this repository. Then, drag and drop the ``URXSearch.xcodeproj`` into the "Frameworks" directory of your project.
 
 
 **Step 2: Linking to URXSearch Binaries and Headers**:
