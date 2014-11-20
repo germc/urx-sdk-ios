@@ -10,6 +10,10 @@
 #import "URXAPIRequestHelper.h"
 #import "URXAPIKey.h"
 
+NSString *identifierWithType(NSString *identifier, NSString *type) {
+    return [NSString stringWithFormat:@"%@:%@", type, identifier];
+};
+
 @implementation URXAPIRequestHelper
 
 +(NSString *)deviceIdentifier {
@@ -69,9 +73,9 @@
     // Set Device Identifier
     NSString *idfa = [self deviceIdentifier];
     if(idfa != nil) {
-        [request addValue:idfa forHTTPHeaderField:@"X-Device-Identifier"];
+        [request addValue:identifierWithType(idfa, @"idfa") forHTTPHeaderField:@"X-Device-Identifier"];
     }
-    [request addValue:[[UIDevice currentDevice].identifierForVendor UUIDString] forHTTPHeaderField:@"X-Device-Identifier"];
+    [request addValue:identifierWithType([[UIDevice currentDevice].identifierForVendor UUIDString], @"idfv") forHTTPHeaderField:@"X-Device-Identifier"];
     
     return request;
 }
