@@ -8,15 +8,15 @@
 
 #import "URXResolutionResponse.h"
 #import "URXAPIError.h"
+#import "URXResolutionRequest.h"
 
-@interface URXSearchResult : NSObject
+@interface URXSearchResult : URXResolutionRequest
 
 @property (nonatomic,readonly) NSString *name;
 @property (nonatomic,readonly) NSString *imageUrl;
 @property (nonatomic,readonly) NSArray *imagesUrl;
 @property (nonatomic,readonly) NSString *descriptionText;
 @property (nonatomic,readonly) NSString *callToActionText;
-@property (nonatomic,readonly) NSString *urxResolutionUrl;
 @property (strong,nonatomic,readonly) NSDictionary *entityData;
 
 @property (strong, nonatomic, readonly) NSNumber *resultPosition;
@@ -35,11 +35,5 @@
  
  */
 +(instancetype) searchResultFromEntityData:(NSDictionary *)entityData resultPosition:(NSNumber *)resultPosition andCorrelationId:(NSString *)correlationId;
-
--(void) resolveAsynchronouslyWithSuccessHandler:(void (^)(URXResolutionResponse *))successHandler andFailureHandler:(void (^)(URXAPIError *))failureHandler;
--(void) resolveAsynchronouslyWithWebFallbackAndFailureHandler:(void (^)(URXAPIError *))failureHandler;
--(void) resolveAsynchronouslyWithAppStoreFallbackAndFailureHandler:(void (^)(URXAPIError *))failureHandler;
-
--(URXResolutionResponse *) resolveSynchronously;
 
 @end
