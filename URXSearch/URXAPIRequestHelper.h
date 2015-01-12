@@ -4,7 +4,7 @@
 #import "URXSearchResult.h"
 #import "URXQuery.h"
 
-#define URX_API_BASE_URL @"http://beta.urx.io/"
+#define URX_API_BASE_URL @"https://beta.urx.io/"
 #define URX_SEARCH_SDK_VERSION @"0.2"
 
 @interface URXAPIRequestHelper : NSObject
