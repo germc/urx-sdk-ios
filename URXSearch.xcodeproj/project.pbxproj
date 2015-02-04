@@ -33,6 +33,17 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		7830B08A1A818884007DA01E /* URXWithinFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7830B0881A818884007DA01E /* URXWithinFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7830B08B1A818884007DA01E /* URXWithinFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830B0891A818884007DA01E /* URXWithinFilter.m */; };
+		7830B08D1A818A89007DA01E /* URXWithinFilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830B08C1A818A89007DA01E /* URXWithinFilterTests.m */; };
+		7830B08F1A818B88007DA01E /* URXRangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830B08E1A818B88007DA01E /* URXRangeTests.m */; };
+		7830B0921A818D9F007DA01E /* URXRangeableValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830B0911A818D9F007DA01E /* URXRangeableValue.m */; };
+		7830B0931A81907B007DA01E /* URXRangeableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 787D8CA01A6F06C1009058FD /* URXRangeableValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7830B0961A829D1A007DA01E /* URXNearFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7830B0941A829D1A007DA01E /* URXNearFilter.h */; };
+		7830B0971A829D1A007DA01E /* URXNearFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830B0951A829D1A007DA01E /* URXNearFilter.m */; };
+		7830B0991A829F13007DA01E /* URXNearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830B0981A829F13007DA01E /* URXNearTests.m */; };
+		787D8CA31A6F0753009058FD /* URXRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 787D8CA11A6F0753009058FD /* URXRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		787D8CA41A6F0753009058FD /* URXRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 787D8CA21A6F0753009058FD /* URXRange.m */; };
 		788DE9A41A23D2D400BAFAB3 /* URXResolutionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 788DE9A21A23D2D400BAFAB3 /* URXResolutionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		788DE9A51A23D2D400BAFAB3 /* URXResolutionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 788DE9A31A23D2D400BAFAB3 /* URXResolutionRequest.m */; };
 		7898E9021A04022B00819BEA /* URXTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 7898E9001A04022B00819BEA /* URXTag.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -135,6 +146,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7830B0881A818884007DA01E /* URXWithinFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXWithinFilter.h; sourceTree = "<group>"; };
+		7830B0891A818884007DA01E /* URXWithinFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXWithinFilter.m; sourceTree = "<group>"; };
+		7830B08C1A818A89007DA01E /* URXWithinFilterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXWithinFilterTests.m; sourceTree = "<group>"; };
+		7830B08E1A818B88007DA01E /* URXRangeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXRangeTests.m; sourceTree = "<group>"; };
+		7830B0911A818D9F007DA01E /* URXRangeableValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXRangeableValue.m; sourceTree = "<group>"; };
+		7830B0941A829D1A007DA01E /* URXNearFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXNearFilter.h; sourceTree = "<group>"; };
+		7830B0951A829D1A007DA01E /* URXNearFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXNearFilter.m; sourceTree = "<group>"; };
+		7830B0981A829F13007DA01E /* URXNearTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXNearTests.m; sourceTree = "<group>"; };
+		787D8CA01A6F06C1009058FD /* URXRangeableValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URXRangeableValue.h; sourceTree = "<group>"; };
+		787D8CA11A6F0753009058FD /* URXRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXRange.h; sourceTree = "<group>"; };
+		787D8CA21A6F0753009058FD /* URXRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXRange.m; sourceTree = "<group>"; };
 		788DE9A21A23D2D400BAFAB3 /* URXResolutionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXResolutionRequest.h; sourceTree = "<group>"; };
 		788DE9A31A23D2D400BAFAB3 /* URXResolutionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXResolutionRequest.m; sourceTree = "<group>"; };
 		7898E9001A04022B00819BEA /* URXTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXTag.h; sourceTree = "<group>"; };
@@ -353,6 +375,14 @@
 				78A40F1719EF2E5100121171 /* URXOffset.m */,
 				7898E9001A04022B00819BEA /* URXTag.h */,
 				7898E9011A04022B00819BEA /* URXTag.m */,
+				787D8CA01A6F06C1009058FD /* URXRangeableValue.h */,
+				7830B0911A818D9F007DA01E /* URXRangeableValue.m */,
+				787D8CA11A6F0753009058FD /* URXRange.h */,
+				787D8CA21A6F0753009058FD /* URXRange.m */,
+				7830B0881A818884007DA01E /* URXWithinFilter.h */,
+				7830B0891A818884007DA01E /* URXWithinFilter.m */,
+				7830B0941A829D1A007DA01E /* URXNearFilter.h */,
+				7830B0951A829D1A007DA01E /* URXNearFilter.m */,
 			);
 			name = Query;
 			sourceTree = "<group>";
@@ -372,6 +402,9 @@
 				78A40F1A19EF2EFC00121171 /* URXLimitTests.m */,
 				78A40F1C19EF307100121171 /* URXOffsetTests.m */,
 				78F85EDB19F036B3002459AC /* URXQueryTests.m */,
+				7830B08C1A818A89007DA01E /* URXWithinFilterTests.m */,
+				7830B08E1A818B88007DA01E /* URXRangeTests.m */,
+				7830B0981A829F13007DA01E /* URXNearTests.m */,
 			);
 			name = "Query Tests";
 			sourceTree = "<group>";
@@ -388,6 +421,7 @@
 				ACC0388419BFAFE2005DA33B /* URXGroup.h in Headers */,
 				ACC0387019BFAFE2005DA33B /* URXOr.h in Headers */,
 				ACC0388C19BFAFE2005DA33B /* URXFilter.h in Headers */,
+				7830B0961A829D1A007DA01E /* URXNearFilter.h in Headers */,
 				ACC0390619BFBF9D005DA33B /* URXAPIRequestHelper.h in Headers */,
 				ACC0386E19BFAFE2005DA33B /* URXAnd.h in Headers */,
 				ACC0388019BFAFE2005DA33B /* URXActionFilter.h in Headers */,
@@ -405,7 +439,10 @@
 				ACEDDC9C19E5C322007DA6C1 /* URXConcatenation.h in Headers */,
 				ACC038FE19BFB986005DA33B /* URXSearchResult.h in Headers */,
 				ACC0387C19BFAFE2005DA33B /* URXDomainFilter.h in Headers */,
+				787D8CA31A6F0753009058FD /* URXRange.h in Headers */,
+				7830B08A1A818884007DA01E /* URXWithinFilter.h in Headers */,
 				ACC038B519BFB113005DA33B /* NSDictionary+JSONLD.h in Headers */,
+				7830B0931A81907B007DA01E /* URXRangeableValue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +582,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC24BA7A19E1F75B0090EFE8 /* URXAPIError.m in Sources */,
+				787D8CA41A6F0753009058FD /* URXRange.m in Sources */,
 				ACC038FF19BFB986005DA33B /* URXSearchResult.m in Sources */,
 				78A40F1919EF2E5100121171 /* URXOffset.m in Sources */,
 				ACC0386F19BFAFE2005DA33B /* URXAnd.m in Sources */,
@@ -556,6 +594,9 @@
 				ACC0390319BFBCFC005DA33B /* URXResolutionResponse.m in Sources */,
 				ACC0388319BFAFE2005DA33B /* URXNot.m in Sources */,
 				7898E9031A04022B00819BEA /* URXTag.m in Sources */,
+				7830B0921A818D9F007DA01E /* URXRangeableValue.m in Sources */,
+				7830B0971A829D1A007DA01E /* URXNearFilter.m in Sources */,
+				7830B08B1A818884007DA01E /* URXWithinFilter.m in Sources */,
 				ACC0386D19BFAFE2005DA33B /* URXQuery.m in Sources */,
 				ACC0387119BFAFE2005DA33B /* URXOr.m in Sources */,
 				78A40F1519EF2D3F00121171 /* URXLimit.m in Sources */,
@@ -581,12 +622,15 @@
 				ACC038AA19BFB018005DA33B /* URXNotTests.m in Sources */,
 				ACC038FB19BFB3ED005DA33B /* URXIntegrationTests.m in Sources */,
 				AC2F2AA319DB63E00070A268 /* URXSearchResultTests.m in Sources */,
+				7830B08F1A818B88007DA01E /* URXRangeTests.m in Sources */,
 				ACC038AF19BFB018005DA33B /* URXActionFilterTests.m in Sources */,
+				7830B08D1A818A89007DA01E /* URXWithinFilterTests.m in Sources */,
 				ACC038A819BFB018005DA33B /* URXDomainFilterTests.m in Sources */,
 				ACC038AE19BFB018005DA33B /* URXOrTests.m in Sources */,
 				78E8DB071A00165400CBBFE5 /* URXAPIRequestHelperTests.m in Sources */,
 				ACC038AD19BFB018005DA33B /* URXAndTests.m in Sources */,
 				78A40F1D19EF307100121171 /* URXOffsetTests.m in Sources */,
+				7830B0991A829F13007DA01E /* URXNearTests.m in Sources */,
 				ACC038AB19BFB018005DA33B /* URXGroupTests.m in Sources */,
 				ACC038A719BFB018005DA33B /* URXRawQueryTests.m in Sources */,
 				ACC038A519BFB018005DA33B /* URXTermTests.m in Sources */,
