@@ -39,7 +39,7 @@
 		7830B08F1A818B88007DA01E /* URXRangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830B08E1A818B88007DA01E /* URXRangeTests.m */; };
 		7830B0921A818D9F007DA01E /* URXRangeableValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830B0911A818D9F007DA01E /* URXRangeableValue.m */; };
 		7830B0931A81907B007DA01E /* URXRangeableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 787D8CA01A6F06C1009058FD /* URXRangeableValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7830B0961A829D1A007DA01E /* URXNearFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7830B0941A829D1A007DA01E /* URXNearFilter.h */; };
+		7830B0961A829D1A007DA01E /* URXNearFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7830B0941A829D1A007DA01E /* URXNearFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7830B0971A829D1A007DA01E /* URXNearFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830B0951A829D1A007DA01E /* URXNearFilter.m */; };
 		7830B0991A829F13007DA01E /* URXNearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830B0981A829F13007DA01E /* URXNearTests.m */; };
 		787D8CA31A6F0753009058FD /* URXRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 787D8CA11A6F0753009058FD /* URXRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -421,7 +421,6 @@
 				ACC0388419BFAFE2005DA33B /* URXGroup.h in Headers */,
 				ACC0387019BFAFE2005DA33B /* URXOr.h in Headers */,
 				ACC0388C19BFAFE2005DA33B /* URXFilter.h in Headers */,
-				7830B0961A829D1A007DA01E /* URXNearFilter.h in Headers */,
 				ACC0390619BFBF9D005DA33B /* URXAPIRequestHelper.h in Headers */,
 				ACC0386E19BFAFE2005DA33B /* URXAnd.h in Headers */,
 				ACC0388019BFAFE2005DA33B /* URXActionFilter.h in Headers */,
@@ -442,6 +441,7 @@
 				787D8CA31A6F0753009058FD /* URXRange.h in Headers */,
 				7830B08A1A818884007DA01E /* URXWithinFilter.h in Headers */,
 				ACC038B519BFB113005DA33B /* NSDictionary+JSONLD.h in Headers */,
+				7830B0961A829D1A007DA01E /* URXNearFilter.h in Headers */,
 				7830B0931A81907B007DA01E /* URXRangeableValue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
