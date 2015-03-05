@@ -67,9 +67,9 @@ NSString *identifierWithType(NSString *identifier, NSString *type) {
     // Set Device Identifier
     NSString *idfa = [self deviceIdentifier];
     if(idfa != nil) {
-        [request addValue:identifierWithType(idfa, @"idfa") forHTTPHeaderField:@"X-Device-Identifier"];
+        [request addValue:identifierWithType(idfa, @"idfa") forHTTPHeaderField:@"X-Device-Identifiers"];
     }
-    [request addValue:identifierWithType([[UIDevice currentDevice].identifierForVendor UUIDString], @"idfv") forHTTPHeaderField:@"X-Device-Identifier"];
+    [request addValue:identifierWithType([[UIDevice currentDevice].identifierForVendor UUIDString], @"idfv") forHTTPHeaderField:@"X-Device-Identifiers"];
     
     return request;
 }
