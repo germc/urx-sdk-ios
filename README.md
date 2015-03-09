@@ -4,18 +4,18 @@ The URX iOS SDK is a wrapper for URX's Deep Link Search API.
 To receive your API key, please visit [dashboard.urx.com](http://dashboard.urx.com).
 
 ## Setup:
-###Step 1: Add the URXSearch Framework to your Project**:
+###Step 1: Add the URXSearch Framework to your Project:
 First, clone this repository. Then, drag and drop the ``URXSearch.xcodeproj`` into the "Frameworks" directory of your project.
 
 
-###Step 2: Linking to URXSearch Binaries and Headers**:
+###Step 2: Linking to URXSearch Binaries and Headers:
 Make sure that the ``URXSearch.framework`` has been added to your project's binary. In your project settings, select your ``Target`` and select the ``Build Phases`` tab.  In the ``Link Binary With Libraries`` phase you should see ``URXSearch.framework``. If not, hit the + button and select it from the list of options.
 
 
-###Step 3: Set up the API Key**:
+###Step 3: Set up the API Key:
 Before you can use the SDK, you must provide your URX API Key. To do this, add a `String` row to your Info.plist file with ``URX API Key`` as the key and your API key as the value. Contact support@urx.com for an API key if you don't already have one.
 
-###Step 4: Set -ObjC linker flag**:
+###Step 4: Set -ObjC linker flag:
 In your project's Build Settings, make sure to add -ObjC in the "Other Linker Flags" setting.
 
 ## Basic Usage:
