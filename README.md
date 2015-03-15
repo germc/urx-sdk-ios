@@ -5,7 +5,7 @@ To receive your API key, please visit [dashboard.urx.com](http://dashboard.urx.c
 
 ## Setup:
 ###Step 1: Add the URXSearch Framework to your Project:
-First, clone this repository. Then, drag and drop the ``URXSearch.xcodeproj`` into the "Frameworks" directory of your project.
+First, clone this repository. Then, drag and drop the ``URXSearch.framework`` into the "Frameworks" directory of your project.
 
 
 ###Step 2: Linking to URXSearch Binaries and Headers:
@@ -37,6 +37,8 @@ In your project's Build Settings, make sure to add -ObjC in the "Other Linker Fl
     NSLog(@"%@", result.descriptionText);
     // The Search Result Content's call to action text (ie. "Buy Tickets")
     NSLog(@"%@", result.callToActionText);
+    // The Search Result Content's app name
+    NSLog(@"%@", result.appName);
 } andFailureHandler:^(URXAPIError *error) {
     // SEARCH FAILURE HANDLER
     NSLog(@"%@", error.errorMessage);

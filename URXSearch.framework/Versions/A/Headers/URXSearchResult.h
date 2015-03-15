@@ -11,6 +11,7 @@
 @property (nonatomic,readonly) NSArray *imagesUrl;
 @property (nonatomic,readonly) NSString *descriptionText;
 @property (nonatomic,readonly) NSString *callToActionText;
+@property (nonatomic,readonly) NSString *appName;
 @property (strong,nonatomic,readonly) NSDictionary *entityData;
 
 @property (strong, nonatomic, readonly) NSNumber *resultPosition;

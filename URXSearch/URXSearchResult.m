@@ -106,6 +106,14 @@
     return [actionTypeString substringToIndex:([actionTypeString length] - [@"Action" length])];
 }
 
+-(NSString *)appName {
+    id potentialAction = [self.entityData getSingle:@"potentialAction"];
+    if (potentialAction == nil || ![potentialAction isKindOfClass:[NSDictionary class]]) {
+        return nil;
+    }
+    return [potentialAction getSingle:@"name"];
+}
+
 -(NSString *)urxResolutionUrl {
     return [URX_API_BASE_URL stringByAppendingString:[URXAPIRequestHelper uriEncode:[[[[self.entityData getSingle:@"potentialAction"] getSingle:@"target"] getSingle:@"urlTemplate"] stringByReplacingOccurrencesOfString:@"https://urx.io/" withString:@""]]];
 }
