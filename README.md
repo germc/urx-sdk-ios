@@ -1,5 +1,5 @@
 # URX iOS SDK
-The URX iOS SDK is a wrapper for URX's Deep Link Search API. 
+The URX iOS SDK is a wrapper for URX's Deep Link Search API.
 
 To receive your API key, please visit [dashboard.urx.com](http://dashboard.urx.com).
 
@@ -21,8 +21,7 @@ In your project's Build Settings, make sure to add -ObjC in the "Other Linker Fl
 ## Basic Usage:
 ###### Data from Search Results
 ```objective-c
-#import <URXSearch/URXTerm.h>
-#import <URXSearch/URXSearchResult.h>
+#import <URXSearch/URXSearch.h>
 
 ...
 
@@ -46,8 +45,7 @@ In your project's Build Settings, make sure to add -ObjC in the "Other Linker Fl
 ```
 ###### Search & Resolve with App Store Fallback
 ```objective-c
-#import <URXSearch/URXTerm.h>
-#import <URXSearch/URXSearchResult.h>
+#import <URXSearch/URXSearch.h>
 
 ...
 
@@ -69,7 +67,7 @@ In your project's Build Settings, make sure to add -ObjC in the "Other Linker Fl
 
 ###### Basic Keyword Search
 ```objective-c
-#import <URXSearch/URXTerm.h>
+#import <URXSearch/URXSearch.h>
 
 ...
 
@@ -82,7 +80,7 @@ In your project's Build Settings, make sure to add -ObjC in the "Other Linker Fl
 
 ###### Exact Phrase Match
 ```objective-c
-#import <URXSearch/URXPhrase.h>
+#import <URXSearch/URXSearch.h>
 
 ...
 
@@ -95,9 +93,7 @@ In your project's Build Settings, make sure to add -ObjC in the "Other Linker Fl
 
 ###### Filter by Action
 ```objective-c
-#import <URXSearch/URXTerm.h>
-#import <URXSearch/URXActionFilter.h>
-#import <URXSearch/URXAnd.h>
+#import <URXSearch/URXSearch.h>
 
 ...
 
@@ -111,9 +107,7 @@ In your project's Build Settings, make sure to add -ObjC in the "Other Linker Fl
 
 ###### Filter by Domain
 ```objective-c
-#import <URXSearch/URXTerm.h>
-#import <URXSearch/URXDomainFilter.h>
-#import <URXSearch/URXAnd.h>
+#import <URXSearch/URXSearch.h>
 
 ...
 
@@ -127,9 +121,7 @@ In your project's Build Settings, make sure to add -ObjC in the "Other Linker Fl
 
 ###### Geo Search
 ```objective-c
-#import <URXSearch/URXTerm.h>
-#import <URXSearch/URXNearFilter.h>
-#import <URXSearch/URXAnd.h>
+#import <URXSearch/URXSearch.h>
 
 ...
 
@@ -146,7 +138,7 @@ For more advanced boolean operations and complex queries, see the [API Search Op
 ## Advanced Usage:
 ###### Search With Raw Query String
 ```objective-c
-#import <URXSearch/URXRawQuery.h>
+#import <URXSearch/URXSearch.h>
 
 ...
 
@@ -159,8 +151,7 @@ For more advanced boolean operations and complex queries, see the [API Search Op
 
 ###### Search & Resolve with Web Fallback
 ```objective-c
-#import <URXSearch/URXTerm.h>
-#import <URXSearch/URXSearchResult.h>
+#import <URXSearch/URXSearch.h>
 
 ...
 
@@ -180,7 +171,7 @@ For more advanced boolean operations and complex queries, see the [API Search Op
 ```
 ###### Resolve Url with App Store Fallback
 ```objective-c
-#import <URXSearch/URXResolutionRequest.h>
+#import <URXSearch/URXSearch.h>
 
 ...
 
@@ -191,7 +182,7 @@ For more advanced boolean operations and complex queries, see the [API Search Op
 ```
 ###### Resolve Url with Web Fallback
 ```objective-c
-#import <URXSearch/URXResolutionRequest.h>
+#import <URXSearch/URXSearch.h>
 
 ...
 

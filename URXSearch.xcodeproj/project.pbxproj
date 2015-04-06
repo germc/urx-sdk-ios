@@ -114,6 +114,7 @@
 		ACC0390719BFBF9D005DA33B /* URXAPIRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC0390519BFBF9D005DA33B /* URXAPIRequestHelper.m */; };
 		ACEDDC9C19E5C322007DA6C1 /* URXConcatenation.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEDDC9A19E5C322007DA6C1 /* URXConcatenation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACEDDC9D19E5C322007DA6C1 /* URXConcatenation.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEDDC9B19E5C322007DA6C1 /* URXConcatenation.m */; };
+		D4E88A281AD24C500078E7EB /* URXSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E88A271AD24C500078E7EB /* URXSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +230,7 @@
 		ACC0390519BFBF9D005DA33B /* URXAPIRequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXAPIRequestHelper.m; sourceTree = "<group>"; };
 		ACEDDC9A19E5C322007DA6C1 /* URXConcatenation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXConcatenation.h; sourceTree = "<group>"; };
 		ACEDDC9B19E5C322007DA6C1 /* URXConcatenation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URXConcatenation.m; sourceTree = "<group>"; };
+		D4E88A271AD24C500078E7EB /* URXSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URXSearch.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +292,7 @@
 		ACC0381E19BFAE0D005DA33B /* URXSearch */ = {
 			isa = PBXGroup;
 			children = (
+				D4E88A271AD24C500078E7EB /* URXSearch.h */,
 				ACC0389419BFAFF4005DA33B /* URXAPIError.h */,
 				AC24BA7919E1F75B0090EFE8 /* URXAPIError.m */,
 				ACC0384719BFAFD5005DA33B /* Query */,
@@ -418,6 +421,7 @@
 			files = (
 				ACC0390219BFBCFC005DA33B /* URXResolutionResponse.h in Headers */,
 				ACC0389619BFAFF4005DA33B /* URXAPIError.h in Headers */,
+				D4E88A281AD24C500078E7EB /* URXSearch.h in Headers */,
 				ACC0388419BFAFE2005DA33B /* URXGroup.h in Headers */,
 				ACC0387019BFAFE2005DA33B /* URXOr.h in Headers */,
 				ACC0388C19BFAFE2005DA33B /* URXFilter.h in Headers */,
